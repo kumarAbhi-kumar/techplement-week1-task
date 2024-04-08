@@ -1,6 +1,6 @@
 # Express & NodeJS Login, SignUp and Update User Profile API
 
-This is an Express service that provides authorization functionality and includes separate folders for users and products.
+This is an Express service that provides authorization functionality and includes separate folders for users.
 It also uses Sequelize ORM with SQLite as the database, along with the JSON Web Token (JWT) and AJV libraries.
 
 ## Project Structure
@@ -16,7 +16,7 @@ It also uses Sequelize ORM with SQLite as the database, along with the JSON Web 
    - `routes.js`: Registers all the user CRUD routes.
  - `common`
    - `middlewares`: Various middlewares that can be used in various routes like (isAuthenticated, CheckPermissions etc.)
-   - `models`: Sequelise models for the Product and User Tables
+   - `models`: Sequelise models for the User Tables
  - `storage`: Local storage, that stores all the SQLite tables.
 
 ## Prerequisites
@@ -39,14 +39,14 @@ Signup Command:
 localhost:3000/signup (POST)
 ```
 - `Payload`:
-  - {
-      "firstName": "Kumar",
-      "lastName": "Abhishek",
-      "email": "fabiamkumar@gmail.com",
-      "username": "kumar-admin",
-      "password": "kumar-admin",
-      "role": "admin",
-      "age": 23
+  - { <br>
+      "firstName": "Kumar", <br>
+      "lastName": "Abhishek", <br>
+      "email": "fabiamkumar@gmail.com", <br>
+      "username": "kumar-admin", <br>
+      "password": "kumar-admin", <br>
+      "role": "admin", <br>
+      "age": 23 <br>
     }
 
 Login command:
@@ -54,9 +54,9 @@ Login command:
 localhost:3000/login (POST)
 ```
 - `Payload`:
-  - {
-      "username": "",
-      "password": ""
+  - { <br>
+      "username": "", <br>
+      "password": "" <br>
     }
 
 View all users:
@@ -69,8 +69,8 @@ localhost:3000/user (PATCH)
 ```
 - *provide auth token in bearers
 - `Payload`:
-- {
-    "firstName": "Kumar",
-    "lastName": "Abhishek",
-    "age": 24
+- { <br>
+    "firstName": "Kumar", <br>
+    "lastName": "Abhishek", <br>
+    "age": 24 <br>
 - }

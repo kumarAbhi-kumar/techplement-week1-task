@@ -1,4 +1,4 @@
-# E-Commerce Store with NodeJS
+# Express & NodeJS Login, SignUp and Update User Profile API
 
 This is an Express service that provides authorization functionality and includes separate folders for users and products.
 It also uses Sequelize ORM with SQLite as the database, along with the JSON Web Token (JWT) and AJV libraries.
@@ -40,13 +40,13 @@ localhost:3000/signup (POST)
 ```
 - `Payload`:
   - {
-      "firstName": "Arvind",
-      "lastName": "Admin",
-      "email": "kasonu876@gmail.com",
-      "username": "arvindkalra-admin",
-      "password": "arvindkalra-admin",
+      "firstName": "Kumar",
+      "lastName": "Abhishek",
+      "email": "fabiamkumar@gmail.com",
+      "username": "kumar-admin",
+      "password": "kumar-admin",
       "role": "admin",
-      "age": 18
+      "age": 23
     }
 
 Login command:
@@ -60,14 +60,17 @@ localhost:3000/login (POST)
     }
 
 View all users:
-Login command:
 ```shell
-localhost:3000/user/ (PATCH)
+localhost:3000/user/all/ (PATCH)
 ```
-
-## License
-This project is licensed under the MIT License.
-
-
-
-
+Update User:
+```shell
+localhost:3000/user (PATCH)
+```
+- *provide auth token in bearers
+- `Payload`:
+- {
+    "firstName": "Kumar",
+    "lastName": "Abhishek",
+    "age": 24
+- }

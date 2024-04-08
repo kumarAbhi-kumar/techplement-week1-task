@@ -24,7 +24,7 @@ It also uses Sequelize ORM with SQLite as the database, along with the JSON Web 
 2. NPM 
 
 ## Installation
-1. Navigate to the project directory: `cd e-commerce-service`
+1. Navigate to the project directory: `cd techplement-week1-task`
 2. Install the dependencies: `npm install`
 
 ## Usage
